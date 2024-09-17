@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MARs: Multi-view Attention Regularizations</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span style="color: rgb(192, 0, 0)">MARs</span>: Multi-view Attention Regularizations <br> for Patch-based Feature Recognition <br> of Space Terrain</h1>
+            <!-- <h1 style="font-size:1.5rem">European Conference on Computer Vision (ECCV) 2024</h1> -->
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://tjchase34.github.io/" target="_blank">Timothy Chase Jr</a>,</span>
+                <span class="author-block">
+                  <a href="https://cse.buffalo.edu/faculty/kdantu/" target="_blank">Karthik Dantu</a></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">University at Buffalo<br>18th European Conference on Computer Vision (ECCV), 2024</span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <a href="https://www.buffalo.edu/">
+                      <img style="width:30%; padding-right: 15px;" src="static/images/ub_logo.png">
+                    </a>
+                    <a href="https://eccv2024.ecva.net/">
+                      <img style="width:30%; height: 30%; padding-right: 15px;" src="static/images/eccv_logo.png">
+                    </a>
+                    <a href="http://drones.cse.buffalo.edu/">
+                      <img style="width:30%; height:auto; padding-bottom: 25px;" src="static/images/drones_logo.png">
+                    </a>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (Coming Soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary (Coming Soon)</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/droneslab/mars/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+              <span class="link-block">
+                <a href="https://github.com/droneslab/Luna-1/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa fa-database"></i>
+                  </span>
+                  <span>Luna-1 Dataset</span>
+                  </a>
+
+              <div class="content has-text-justified">
+                <img style="width:100%;" src="static/images/mars_intro.png">
+                <p>
+                  Patch-based features of space terrain exhibit extreme inter-class similarity and varying multi-view observations, which is difficult for metric learning to discern where attention focus is disparate. We propose Multi-view Attention Regularizations (MARs) to alleviate this issue and drive the attention of arbitrary viewpoints together.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <iframe height="540" width="960" src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</section> -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The visual detection and tracking of surface terrain is required for spacecraft to safely land on or navigate within close proximity to celestial objects. Current approaches rely on template matching with pre-gathered patch-based features, which are expensive to obtain and a limiting factor in perceptual capability. While recent literature has focused on in-situ detection methods to enhance navigation and operational autonomy, robust description is still needed. In this work, we explore metric learning as the lightweight feature description mechanism and find that current solutions fail to address inter-class similarity and multi-view observational geometry. We attribute this to the view-unaware attention mechanism and introduce Multi-view Attention Regularizations (MARs) to constrain the channel and spatial attention across multiple feature views, regularizing the what and where of attention focus. We thoroughly analyze many modern metric learning losses with and without MARs and demonstrate improved terrainfeature recognition performance by upwards of 85%. We additionally introduce the Luna-1 dataset, consisting of Moon crater landmarks and reference navigation frames from NASA mission data to support future research in this difficult task.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Youtube video -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+<!-- Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <!-- Prior literature demonstrates that the attention mechansim has a large influence on feature recognition
+            performance in multi-view settings, but the extent of this influence concerning 
+            transformation equivariant network properties (either encoded or learned) is unclear. 
+            Equivariance does not guarantee that attention, being a strictly learnable mechanism, will
+            be identical between multiple views of the same feature; it only suggests that it
+            should be similar.  An alignment of attention focus should lessen the downstream
+            recognition difficulty, maximizing separability and view-dependent groupings in
+            the descriptor embedding space, although such a constraint is not readily formulated in
+            current multi-view metric learning pipelines. We suggest that any attention 
+            disagreement must be directly accounted for during the training, and propose a
+            soft learning constraint to rectify any variance. This concept forms the basis of
+            our proposed Multi-view Attention Regularizations (MARs). -->
+
+            <!-- MARs formulates an attention-alignment objective between feature views for improved downstream recognition performance,
+            through the concept of height and width-disparate attention similarity spaces. -->
+
+            MARs embeds attention information into height and width-disparate similarty spaces, driving the <strong><em>what</em></strong>
+            and <strong><em>where</em></strong> of multi-view attention focus together while avoiding the trivial solution (e.g., both 
+            attention maps are zero everywhere).
+          </p>
+          <img style="width:100%;" src="static/images/arch.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+<style>
+  .result-caption {
+    font-size: 20px;
+  }
+</style>
+
+<!-- Luna-1 -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">The Luna-1 Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            To facilitate future research in the challenging space landmark recognition problem, we introduce the <strong><em>Luna-1</em></strong>
+            dataset, consisting of 5,067 Moon crater landmarks and 2,161 emulated orbital navigation frames from real-world 
+            NASA data.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+            <img style="width:49%; padding-right: 15px;" src="static/images/craters.png"/>
+            <img style="width:49%; padding-right: 15px; padding-bottom: 2px;" src="static/images/nav_frames.png"/> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Luna-1 -->
+
+<!-- Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Results</h2>
+        <div class="content has-text-centered">
+          <h6>
+            MARs leads to improved attention alignment comapared with rotational equivarant and spatial attention layers (RIC CA):
+          </h6>
+          <img style="width:100%;" src="static/images/q1.png">
+          
+          <h6>
+            and maintains this alignment across different environment features:
+          </h6>
+          <img style="width:100%;" src="static/images/q2.png">
+          
+          <h6>
+            MARs can also converge challenging data, where traditional methods fail:
+          </h6>
+          <img style="width:100%;" src="static/images/q3.png">
+
+          <h6>
+            During training, MARs (bottom) leads to greater stability and faster, more uniform convergence against 
+            rotational equivarant and spatial attention layers (RIC CA, top):
+          </h6>
+          <img style="width:100%;" src="static/images/q4.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Results -->
+
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Training Evolution</h2>
+        <div class="content has-text-centered">
+            <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+              <source src="static/videos/mars.mp4" type="video/mp4">
+            </video>
+            <video poster="" id="video2" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+              <source src="static/videos/moon.mp4" type="video/mp4">
+            </video>
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/earth.mp4" type="video/mp4">
+            </video>
+            <h6>
+              Attention alignment evolution during training for MARs (bottom row) against rotational equivarant and spatial attention layers (RIC CA, top row)
+              for Mars Crater (left), Moon Crater (middle), and Earth Stadium (right) features.
+            </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/mars.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/moon.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/earth.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- Video carousel -->
+<!-- <div id="wrapper"> 
+  <video id="home1" width="400" height="300" poster="" controls="controls" preload="none"> 
+      <source type="video/mp4" src="static/videos/mars.mp4" /> 
+  </video>
+  <video id="home2" width="400" height="300" poster="" controls="controls" preload="none"> 
+      <source type="video/mp4" src="static/videos/moon.mp4" /> 
+  </video>
+  <div class="clear"></div> 
+</div> -->
+<!-- End video carousel -->
+
+
+
+<!-- Poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered"><h2 class="title">Poster</h2>
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600"></iframe>
+      <!-- <embed src="static/pdfs/eccv_poster_final.pdf" width="100%" type="application/pdf"> -->
+    </div>
+  </div>
+</section>
+<!-- End Poster -->
+
+
+
+
+
+
+
+<!-- <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <embed src="static/pdfs/eccv_poster_final.pdf" style="height:100%;" type="application/pdf"> -->
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item"> -->
+      <!-- Your image here -->
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light"></section>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">          
+          <div class="publication-video">
+            <iframe height="540" width="960" src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{chase2024mars,
+        title={MARs: Multi-view Attention Regularizations for Patch-based Feature Recognition of Space Terrain},
+        author={Timothy Chase Jr and Karthik Dantu},
+        year={2024},
+        booktitle={ECCV},
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- End of Statcounter Code -->
+
+  </body>
+  </html>
