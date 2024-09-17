@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>MARs: Multi-view Attention Regularizations</title>
+  <title>PIXER : Learning Visual Information Utilty</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,27 +52,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><span style="color: rgb(192, 0, 0)">MARs</span>: Multi-view Attention Regularizations <br> for Patch-based Feature Recognition <br> of Space Terrain</h1>
+            <h1 class="title is-1 publication-title"><span style="color: rgb(192, 0, 0)">PIXER</span>: Learning Visual Information Utility</h1>
             <!-- <h1 style="font-size:1.5rem">European Conference on Computer Vision (ECCV) 2024</h1> -->
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
+                <a href="https://yash.turkar.in/" target="_blank">Yash Turkar</a>,</span>
+              <span class="author-block">
                 <a href="https://tjchase34.github.io/" target="_blank">Timothy Chase Jr</a>,</span>
+              <span class="author-block">
+                <a href="https://christoaluckal.com/" target="_blank">Christo Aluckal</a>,</span>
                 <span class="author-block">
                   <a href="https://cse.buffalo.edu/faculty/kdantu/" target="_blank">Karthik Dantu</a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">University at Buffalo<br>18th European Conference on Computer Vision (ECCV), 2024</span>
+                    <span class="author-block">Center for Embodied Autonomy and Robotics (CEAR) <br> University at Buffalo</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <a href="https://www.buffalo.edu/">
                       <img style="width:30%; padding-right: 15px;" src="static/images/ub_logo.png">
                     </a>
-                    <a href="https://eccv2024.ecva.net/">
+<!--                     <a href="https://eccv2024.ecva.net/">
                       <img style="width:30%; height: 30%; padding-right: 15px;" src="static/images/eccv_logo.png">
-                    </a>
+                    </a> -->
                     <a href="http://drones.cse.buffalo.edu/">
                       <img style="width:30%; height:auto; padding-bottom: 25px;" src="static/images/drones_logo.png">
                     </a>
@@ -104,7 +108,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/droneslab/mars/"
+                    <a href="https://github.com/droneslab/pixer/"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -163,7 +167,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The visual detection and tracking of surface terrain is required for spacecraft to safely land on or navigate within close proximity to celestial objects. Current approaches rely on template matching with pre-gathered patch-based features, which are expensive to obtain and a limiting factor in perceptual capability. While recent literature has focused on in-situ detection methods to enhance navigation and operational autonomy, robust description is still needed. In this work, we explore metric learning as the lightweight feature description mechanism and find that current solutions fail to address inter-class similarity and multi-view observational geometry. We attribute this to the view-unaware attention mechanism and introduce Multi-view Attention Regularizations (MARs) to constrain the channel and spatial attention across multiple feature views, regularizing the what and where of attention focus. We thoroughly analyze many modern metric learning losses with and without MARs and demonstrate improved terrainfeature recognition performance by upwards of 85%. We additionally introduce the Luna-1 dataset, consisting of Moon crater landmarks and reference navigation frames from NASA mission data to support future research in this difficult task.
+            Accurate feature detection is fundamental for var- ious computer vision tasks including autonomous robotics, 3D reconstruction, medical imaging, and remote sensing. Despite advancements in enhancing the robustness of visual features, no existing method measures the utility of visual information be- fore processing by specific feature-type algorithms. To address this gap, we introduce PIXER and the concept of “Featureness”, which reflects the inherent interest and reliability of visual information for robust recognition independent of any specific feature type. Leveraging a generalization on Bayesian learning, our approach quantifies both the probability and uncertainty of a pixel’s contribution to robust visual utility in a single- shot process, avoiding costly operations such as Monte Carlo sampling, and permitting customizable featureness definitions adaptable to a wide range of applications. We evaluate PIXER on visual odometry with featureness selectivity, achieving an av- erage of 31% improvement in RMSE trajectory with 49% fewer features.
           </p>
         </div>
       </div>
@@ -172,7 +176,7 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Youtube video -->
+<!-- <!-- Youtube video -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -184,7 +188,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 <!-- Method -->
@@ -194,25 +198,7 @@
       <div class="column"><h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            <!-- Prior literature demonstrates that the attention mechansim has a large influence on feature recognition
-            performance in multi-view settings, but the extent of this influence concerning 
-            transformation equivariant network properties (either encoded or learned) is unclear. 
-            Equivariance does not guarantee that attention, being a strictly learnable mechanism, will
-            be identical between multiple views of the same feature; it only suggests that it
-            should be similar.  An alignment of attention focus should lessen the downstream
-            recognition difficulty, maximizing separability and view-dependent groupings in
-            the descriptor embedding space, although such a constraint is not readily formulated in
-            current multi-view metric learning pipelines. We suggest that any attention 
-            disagreement must be directly accounted for during the training, and propose a
-            soft learning constraint to rectify any variance. This concept forms the basis of
-            our proposed Multi-view Attention Regularizations (MARs). -->
-
-            <!-- MARs formulates an attention-alignment objective between feature views for improved downstream recognition performance,
-            through the concept of height and width-disparate attention similarity spaces. -->
-
-            MARs embeds attention information into height and width-disparate similarty spaces, driving the <strong><em>what</em></strong>
-            and <strong><em>where</em></strong> of multi-view attention focus together while avoiding the trivial solution (e.g., both 
-            attention maps are zero everywhere).
+            TODO
           </p>
           <img style="width:100%;" src="static/images/arch.png">
         </div>
@@ -235,9 +221,7 @@
       <div class="column"><h2 class="title is-3">The Luna-1 Dataset</h2>
         <div class="content has-text-justified">
           <p>
-            To facilitate future research in the challenging space landmark recognition problem, we introduce the <strong><em>Luna-1</em></strong>
-            dataset, consisting of 5,067 Moon crater landmarks and 2,161 emulated orbital navigation frames from real-world 
-            NASA data.
+            TODO
           </p>
         </div>
         <div class="content has-text-centered">
